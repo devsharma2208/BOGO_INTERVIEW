@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO UI</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="bogo-line">
+        <span>YAY! It’s BOGO</span>
+      </div>
+
+      <div class="plan-box" id="box1" onclick="selectPlan(1)">
+        <div class="plan-header">
+          <div class="left">
+            <input type="radio" name="plan" />
+            <div>
+              <strong>1 Unit</strong>
+              <span class="discount">10% Off</span>
+              <div class="sub-text">Standard Price</div>
+            </div>
+          </div>
+          <div class="right">
+            <strong>$10.00 USD</strong><br />
+            <small><s>$24.00 USD</s></small>
+          </div>
+        </div>
+
+        <div class="details" id="details1">
+          <label>#1</label>
+          <div class="row">
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option selected disabled>Color</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </div>
+
+          <label style="margin-top: 12px; display: block">#2</label>
+          <div class="row">
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option selected disabled>Color</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="plan-box"
+        id="box2"
+        onclick="selectPlan(2)"
+        style="position: relative"
+      >
+        <div style="position: absolute; top: -10px; right: 20px; width: 100%">
+          <div class="popular">MOST POPULAR</div>
+        </div>
+
+        <div class="plan-header">
+          <div class="left">
+            <input type="radio" name="plan" />
+            <strong>2 Unit</strong>
+            <span class="discount">20% Off</span>
+          </div>
+          <div class="right">
+            <strong>$18.00 USD</strong><br />
+            <small><s>$24.00 USD</s></small>
+          </div>
+        </div>
+
+        <div class="details" id="details2">
+          <label>#1</label>
+          <div class="row">
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option selected disabled>Color</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </div>
+
+          <label style="margin-top: 12px; display: block">#2</label>
+          <div class="row">
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option selected disabled>Color</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-box" id="box3" onclick="selectPlan(3)">
+        <div class="plan-header">
+          <div class="left" style="position: relative">
+            <div>
+              <input type="radio" name="plan" />
+              <strong>3 Unit</strong>
+            </div>
+            <span
+              class="discount"
+              style="position: absolute; right: -65px; top: -20px"
+            >
+              30% Off
+            </span>
+          </div>
+          <div class="right">
+            <strong>$24.00 USD</strong><br />
+            <small><s>$24.00 USD</s></small>
+          </div>
+        </div>
+
+        <div class="details" id="details3">
+          <label>#1</label>
+          <div class="row">
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option selected disabled>Color</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </div>
+
+          <label style="margin-top: 12px; display: block">#2</label>
+          <div class="row">
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option selected disabled>Color</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between">
+        <div class="footer-text">Free Delivery</div>
+        <div class="total">Total: $18.00 USD</div>
+      </div>
+
+      <button class="add-btn">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
